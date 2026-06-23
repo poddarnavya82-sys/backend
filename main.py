@@ -48,7 +48,7 @@ async def run_debate_lifecycle(topic: str, agent_a: str, agent_b: str, total_rou
 
     # Initialize the fast stable Gemini flash model with the correct prefix path
     try:
-        model = genai.GenerativeModel('models/gemini-1.5-flash')
+        model = genai.GenerativeModel('models/gemini-2.5-flash')
     except Exception as e:
         yield "data: " + json.dumps({
             "event": "error",
